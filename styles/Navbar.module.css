@@ -1,0 +1,102 @@
+.nav {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    position: relative;
+    z-index: 1;
+  }
+  .navCenter {
+    width: 90vw;
+    max-width: 1170px;
+  }
+  .navHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btn {
+    font-size: 1rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    border-color: transparent;
+    color: white;
+    background: #222;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+  .btn:hover {
+    background: hsl(210, 22%, 49%);
+  }
+  .navLinks {
+    display: none;
+  }
+  .signinBtn {
+    display: none;
+    font-size: 1rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    border-color: transparent;
+    color: white;
+    background: #222;
+    cursor: pointer;
+    transition: all 0.3s linear;
+  }
+
+  .toggleBtn {
+    font-size: 1rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    border-color: transparent;
+    color: white;
+    background: #222;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    
+  }
+
+  @media screen and (min-width: 800px) {
+    .navCenter {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+    }
+    .toggleBtn {
+        font-size: 1rem;
+        padding: 0.25rem 0.75rem;
+        border-radius: 0.25rem;
+        border-color: transparent;
+        color: white;
+        background: #222;
+        cursor: pointer;
+        transition: all 0.3s linear;
+        display: none; 
+    }
+    .signinBtn {
+      display: inline-block;
+    }
+    .navLinks {
+      display: block;
+      justify-self: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      text-align: center;
+      height: 100%;
+      display: grid;
+      align-items: center;
+    }
+    .navLinks li {
+      height: 100%;
+    }
+    .linkBtn {
+      height: 100%;
+      background: transparent;
+      border-color: transparent;
+      font-size: 1.1rem;
+      color: white;
+      text-transform: capitalize;
+      letter-spacing: 1px;
+      width: 10rem;
+    }
+  }
