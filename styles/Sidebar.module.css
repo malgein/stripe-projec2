@@ -53,9 +53,6 @@
     margin-bottom: 2rem;
   }
 
-  .sidebar article {
-    margin-bottom: 2rem;
-  }
   .sidebarSublinks {
     display: grid;
     grid-template-columns: 1fr 1fr;
