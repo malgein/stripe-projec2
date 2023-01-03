@@ -1,7 +1,7 @@
 import { useGlobalContext } from "../context/context";
 import { FaTimes } from "react-icons/fa";
 import styles from '../styles/Sidebar.module.css'
-import sublinks from "../pages/data"; 
+import {sublinks} from "../data"; 
 
 const Sidebar = () =>{
 	const {isSidebarOpen, closeSidebar} = useGlobalContext()
